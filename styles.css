@@ -24,9 +24,22 @@ body {
 }
 
 .pip {
-  grid-row: span 2;
   width: 100%;
   aspect-ratio: 1 /1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-row: span 2;
+}
+
+[data-value="2"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+[data-value="2"] .pip:nth-child(2) {
+  grid-row-start: 7;
+  grid-column-start: 2;
 }
 
 [data-suit="diamond"] .pip,
@@ -34,20 +47,17 @@ body {
   color: red;
 }
 
-[data-suit="diamond"] .pip {
-  background-image: url("./imgs/diamond.svg");
+[data-suit="club"] .pip,
+[data-suit="spade"] .pip {
+  color: black;
 }
 
 [data-suit="heart"] .pip {
   background-image: url("./imgs/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-[data-suit="club"] .pip,
-[data-suit="spade"] .pip {
-  color: black;
+[data-suit="diamond"] .pip {
+  background-image: url("./imgs/diamond.svg");
 }
 
 [data-suit="club"] .pip {
