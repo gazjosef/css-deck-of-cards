@@ -6,6 +6,10 @@
 
 body {
   background-color: #ddd;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
 }
 
 .card {
@@ -16,7 +20,7 @@ body {
   background-color: white;
   border: 1px solid #000;
   border-radius: 0.25em;
-  padding: 0.75em;
+  padding: 1em;
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -41,17 +45,6 @@ body {
   background-position: center;
   background-size: cover;
   grid-row: span 2;
-}
-
-[data-value="2"] .pip:first-child {
-  grid-row-start: 1;
-  grid-column-start: 2;
-}
-
-[data-value="2"] .pip:nth-child(2) {
-  grid-row-start: 7;
-  grid-column-start: 2;
-  transform: rotate(180deg);
 }
 
 [data-suit="diamond"] .pip,
@@ -106,4 +99,257 @@ body {
 [data-suit="heart"] .corner-number::after {
   content: url("./imgs/heart.svg");
   width: 0.5em;
+}
+
+/* Card 2 */
+
+[data-value="2"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+[data-value="2"] .pip:nth-child(2) {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  transform: rotate(180deg);
+}
+
+/* Card 3 */
+
+[data-value="3"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+[data-value="3"] .pip:nth-child(2) {
+  grid-row-start: 4;
+  grid-column-start: 2;
+}
+
+[data-value="3"] .pip:nth-child(3) {
+  grid-row-start: 7;
+  grid-column-start: 2;
+  transform: rotate(180deg);
+}
+
+/* Card 4 */
+
+[data-value="4"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="4"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="4"] .pip:nth-child(3) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="4"] .pip:nth-child(4) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+/* Card 5 */
+
+[data-value="5"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="5"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="5"] .pip:nth-child(3) {
+  grid-row-start: 4;
+  grid-column-start: 2;
+}
+
+[data-value="5"] .pip:nth-child(4) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="5"] .pip:nth-child(5) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+/* Card 6 */
+
+[data-value="6"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="6"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="6"] .pip:nth-child(3) {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
+
+[data-value="6"] .pip:nth-child(4) {
+  grid-row-start: 4;
+  grid-column-start: 3;
+}
+
+[data-value="6"] .pip:nth-child(5) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="6"] .pip:nth-child(6) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+/* Card 7 */
+
+[data-value="7"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="7"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="7"] .pip:nth-child(3) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+[data-value="7"] .pip:nth-child(4) {
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+
+[data-value="7"] .pip:nth-child(5) {
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+[data-value="7"] .pip:nth-child(6) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="7"] .pip:nth-child(7) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+/* Card 8 */
+
+[data-value="8"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="8"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="8"] .pip:nth-child(3) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+[data-value="8"] .pip:nth-child(4) {
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+
+[data-value="8"] .pip:nth-child(5) {
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+[data-value="8"] .pip:nth-child(6) {
+  grid-row-start: 6;
+  grid-column-start: 2;
+  transform: rotate(180deg);
+}
+
+[data-value="8"] .pip:nth-child(7) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="8"] .pip:nth-child(8) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+/* Card 9 */
+
+[data-value="9"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="9"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="9"] .pip:nth-child(3) {
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+
+[data-value="9"] .pip:nth-child(4) {
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+[data-value="9"] .pip:nth-child(5) {
+  grid-row-start: 4;
+  grid-column-start: 2;
+}
+
+[data-value="9"] .pip:nth-child(6) {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="9"] .pip:nth-child(7) {
+  grid-row-start: 5;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+[data-value="9"] .pip:nth-child(8) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="9"] .pip:nth-child(9) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
 }
