@@ -24,7 +24,7 @@ body {
 
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   position: relative;
 }
 
@@ -40,11 +40,12 @@ body {
 
 .pip {
   width: 100%;
-  aspect-ratio: 1 /1;
+  aspect-ratio: 1 / 1;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  grid-row: span 2;
+
+  grid-row-end: span 2;
 }
 
 [data-suit="diamond"] .pip,
@@ -78,6 +79,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  font-size: 0.8em;
+  letter-spacing: -0.1em;
 }
 
 .corner-number.top {
@@ -237,12 +242,12 @@ body {
 }
 
 [data-value="7"] .pip:nth-child(4) {
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-column-start: 1;
 }
 
 [data-value="7"] .pip:nth-child(5) {
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-column-start: 3;
 }
 
@@ -276,17 +281,17 @@ body {
 }
 
 [data-value="8"] .pip:nth-child(4) {
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-column-start: 1;
 }
 
 [data-value="8"] .pip:nth-child(5) {
-  grid-row-start: 3;
+  grid-row-start: 4;
   grid-column-start: 3;
 }
 
 [data-value="8"] .pip:nth-child(6) {
-  grid-row-start: 6;
+  grid-row-start: 5;
   grid-column-start: 2;
   transform: rotate(180deg);
 }
@@ -349,6 +354,63 @@ body {
 }
 
 [data-value="9"] .pip:nth-child(9) {
+  grid-row-start: 7;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+/* Card 10 */
+
+[data-value="10"] .pip:first-child {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+[data-value="10"] .pip:nth-child(2) {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+[data-value="10"] .pip:nth-child(3) {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+[data-value="10"] .pip:nth-child(4) {
+  grid-row-start: 3;
+  grid-column-start: 1;
+}
+
+[data-value="10"] .pip:nth-child(5) {
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+[data-value="10"] .pip:nth-child(6) {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="10"] .pip:nth-child(7) {
+  grid-row-start: 5;
+  grid-column-start: 3;
+  transform: rotate(180deg);
+}
+
+[data-value="10"] .pip:nth-child(8) {
+  grid-row-start: 6;
+  grid-column-start: 2;
+  transform: rotate(180deg);
+}
+
+[data-value="10"] .pip:nth-child(9) {
+  grid-row-start: 7;
+  grid-column-start: 1;
+  transform: rotate(180deg);
+}
+
+[data-value="10"] .pip:nth-child(10) {
   grid-row-start: 7;
   grid-column-start: 3;
   transform: rotate(180deg);
