@@ -9,11 +9,10 @@ function addCardElements(card) {
   const valueAsNumber = parseInt(value);
 
   if (isNaN(valueAsNumber)) {
+    card.append(createPip());
   } else {
     for (let i = 0; i < valueAsNumber; i++) {
-      const pip = document.createElement("div");
-      pip.classList.add("pip");
-      card.append(pip);
+      card.append(createPip());
     }
   }
 
@@ -28,4 +27,11 @@ function createCornerNumber(position, value) {
   corner.classList.add(position);
 
   return corner;
+}
+
+function createPip() {
+  const pip = document.createElement("div");
+  pip.classList.add("pip");
+
+  return pip;
 }

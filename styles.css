@@ -99,11 +99,33 @@ body {
 .corner-number::after {
   line-height: 0;
   display: block;
+  width: 0.5em;
 }
 
 [data-suit="heart"] .corner-number::after {
   content: url("./imgs/heart.svg");
-  width: 0.5em;
+}
+
+[data-suit="spade"] .corner-number::after {
+  content: url("./imgs/spade.svg");
+}
+
+[data-suit="club"] .corner-number::after {
+  content: url("./imgs/club.svg");
+}
+
+[data-suit="diamond"] .corner-number::after {
+  content: url("./imgs/diamond.svg");
+}
+
+[data-value="A"] .pip,
+[data-value="J"] .pip,
+[data-value="Q"] .pip,
+[data-value="K"] .pip {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  grid-row-end: span 6;
 }
 
 /* Card 2 */
@@ -414,4 +436,40 @@ body {
   grid-row-start: 7;
   grid-column-start: 3;
   transform: rotate(180deg);
+}
+
+/* Card J */
+
+[data-value="J"][data-suit="club"] .pip,
+[data-value="J"][data-suit="spade"] .pip {
+  background-image: url("./imgs/jack-black.svg");
+}
+
+[data-value="J"][data-suit="diamond"] .pip,
+[data-value="J"][data-suit="heart"] .pip {
+  background-image: url("./imgs/jack-red.svg");
+}
+
+/* Card Q */
+
+[data-value="Q"][data-suit="club"] .pip,
+[data-value="Q"][data-suit="spade"] .pip {
+  background-image: url("./imgs/queen-black.svg");
+}
+
+[data-value="Q"][data-suit="diamond"] .pip,
+[data-value="Q"][data-suit="heart"] .pip {
+  background-image: url("./imgs/queen-red.svg");
+}
+
+/* Card K */
+
+[data-value="K"][data-suit="club"] .pip,
+[data-value="K"][data-suit="spade"] .pip {
+  background-image: url("./imgs/king-black.svg");
+}
+
+[data-value="K"][data-suit="diamond"] .pip,
+[data-value="K"][data-suit="heart"] .pip {
+  background-image: url("./imgs/king-red.svg");
 }
