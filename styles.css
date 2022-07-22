@@ -313,7 +313,7 @@ body {
 }
 
 [data-value="8"] .pip:nth-child(6) {
-  grid-row-start: 5;
+  grid-row-start: 6;
   grid-column-start: 2;
   transform: rotate(180deg);
 }
