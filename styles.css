@@ -131,7 +131,7 @@ body {
 /* Card 2 */
 
 [data-value="2"] .pip:first-child {
-  grid-row-start: 1;
+  grid-row-start: span 1;
   grid-column-start: 2;
 }
 
